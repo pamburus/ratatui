@@ -400,8 +400,8 @@ where
         match cursor_position {
             None => self.hide_cursor()?,
             Some(position) => {
-                self.show_cursor()?;
                 self.set_cursor_position(position)?;
+                self.show_cursor()?;
             }
         }
 
